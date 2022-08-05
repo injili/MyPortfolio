@@ -1,0 +1,143 @@
+
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+
+/*Styling Page Background*/
+/*Styling frost glass*/
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    margin-top: 25px !important;
+    margin: auto;
+    width: 60rem;
+    height: 40rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+
+/*Styling frost glass elements*/
+/*nav bar*/
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px 90px;
+    box-sizing: border-box;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Square Peg', cursive;
+}
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.178);
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+}
+.bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/*text modification*/
+.text{
+    position: fixed;
+    top: 25%;
+    left: 4%;
+    width: 60%;
+    height: 100%;
+    padding: 5px 90px;
+    font-family: 'Edu QLD Beginner', cursive;
+
+}
+.text, p{
+    font-size: 21px;
+    color: white;
+}
+/*Social media handles*/
+/*Home Icons*/
+
+.wrapper{
+    padding-top: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    position: fixed;
+    left: 83%;
+    top: 20%;
+  }
+  .wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper.icon:hover span,
+  .wrapper.icon:hover{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus,
+ :active{
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
